@@ -17,5 +17,5 @@ http.createServer(function (req, res) {
 
   // 结束响应
   res.end();
-
+ 
 }).listen(3000); // 监听的端口
