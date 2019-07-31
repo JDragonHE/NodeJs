@@ -3,7 +3,7 @@ var http = require("http");
 var tools1 = require('./03_tool-add');
 
 // 如果 Node 在当前目录没找到 tool.js 文件，则会去 node_modules 里面去查找
-var tools2 = require('03_tool-multiply');
+var tools2 = require('./node-modules/03_tool-multiply');
 
 /**
  * 通过 package.json 来引用文件
@@ -12,7 +12,7 @@ var tools2 = require('03_tool-multiply');
  * 3. Node 通过 require 查找 jsliang-module，发现它有个 package.json
  * 4. Node 执行 tools.js 文件
  */
-var tools3 = require('jsliang-module');
+var tools3 = require('./node-modules/jdragon-modules/tools');
 
 http.createServer(function (req, res) {
 

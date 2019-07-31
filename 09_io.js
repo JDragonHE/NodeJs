@@ -1,0 +1,19 @@
+console.log("1");
+
+// console.log("2");
+let fs = require('fs');
+getExt = () => {
+  fs.readFile('08_ext.json', (err, data) => {
+    console.log("2");
+  })
+}
+getExt();
+
+console.log("3");
+
+/**
+ * Console：
+ * 1
+ * 3
+ * 2
+ */
