@@ -17,3 +17,14 @@ console.log("3");
  * 3
  * 2
  */
+
+
+getExt = (callback) => {
+  fs.readFile('08_ext.json', (err, data) => {
+    callback(data);
+  })  
+}
+
+getExt( (result) => {
+  console.log(result.toString());
+})
